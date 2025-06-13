@@ -1,58 +1,384 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kush Man Shrestha | Portfolio</title>
+<style>
+  /* Reset and base */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+  }
+  a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  header {
+    background: #0073e6;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  header nav {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  header nav ul li {
+    font-weight: 600;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  h2 {
+    border-bottom: 3px solid #0073e6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #0073e6;
+  }
+  /* About */
+  .about p {
+    font-size: 1.1rem;
+    white-space: pre-line;
+  }
+  /* Contact info */
+  .contact-info p {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  /* Skills */
+  .skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .skills ul li {
+    background: #0073e6;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  /* Education, Experience, Projects */
+  .item-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: #222;
+  }
+  .item-subtitle {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.3rem;
+  }
+  .item-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  .item-desc {
+    margin-bottom: 1rem;
+    white-space: pre-line;
+  }
+  .project-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    color: #0073e6;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    header nav ul {
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+    main {
+      margin: 1rem;
+      padding: 0;
+    }
+  }
+</style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Kush Man Shrestha | Portfolio&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="style.css" /&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Kush Man Shrestha&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Software Quality Assurance Engineer&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="about"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;About Me&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Detail-oriented QA Engineer with experience in software testing, project analysis, and problem solving. Skilled in Black Box and White Box testing.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="projects"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Projects&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="https://sifu.kungfuquiz.com/home" target="_blank"&gt;Kungfu Quiz (Sifu)&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="https://mysecondteacher.com/" target="_blank"&gt;My Second Teacher&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="https://app.jelajahilmu.com" target="_blank"&gt;Jelajah Ilmu&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="https://app.alstondigital.sg/" target="_blank"&gt;Alston Digital&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="contact"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Contact&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Email: shresthakush1996@gmail.com&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Phone: +977 9849-527999&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&amp;copy; 2025 Kush Man Shrestha&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+  <nav>
+    <div class="logo">Kush Man Shrestha</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Detail-oriented Software Quality Assurance Engineer with over 3 years of experience in software testing and project coordination. 
+      Currently managing projects while also contributing to QA efforts—leading cross-functional teams, gathering requirements, tracking progress, and ensuring timely delivery of high-quality software. 
+      Proficient in Black Box and White Box testing techniques with a strong focus on usability, performance, and product reliability. Recognized for clear communication, attention to detail, and commitment to continuous improvement.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Key Skills</h2>
+
+    <h3>Testing & Quality Assurance</h3>
+    <ul>
+      <li>Black Box & White Box Testing</li>
+      <li>Performance Testing</li>
+      <li>Test Case Design</li>
+      <li>Bug Reporting</li>
+      <li>QA Documentation</li>
+    </ul>
+
+    <h3>Tools & Technologies</h3>
+    <ul>
+      <li>Git</li>
+      <li>GitLab</li>
+      <li>Figma</li>
+      <li>InVision</li>
+      <li>Slack</li>
+      <li>Google Chat</li>
+      <li>Microsoft Office Suite</li>
+    </ul>
+
+    <h3>Data Analysis</h3>
+    <ul>
+      <li>Statistical Analysis</li>
+      <li>Predictive Modeling Fundamentals</li>
+      <li>Basic Machine Learning Concepts</li>
+    </ul>
+
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Strong Communication (Nepali & English)</li>
+      <li>Problem Solving</li>
+      <li>Cross-Functional Team Collaboration</li>
+      <li>Time Management</li>
+      <li>Conflict Resolution</li>
+      <li>Adaptability</li>
+    </ul>
+
+    <h3>Additional Skills</h3>
+    <ul>
+      <li>Basic Graphic Design</li>
+      <li>Content Editing</li>
+      <li>Requirement Gathering</li>
+      <li>Project Coordination</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div>
+      <div class="item-title">MSc in Information Technology and Applied Security</div>
+      <div class="item-subtitle">Islington College, London Metropolitan University — 2024</div>
+    </div>
+
+    <div>
+      <div class="item-title">BSc (Hons) in Computer Science</div>
+      <div class="item-subtitle">Herald College Kathmandu, University of Wolverhampton — 2019</div>
+    </div>
+
+    <div>
+      <div class="item-title">+2 in Computer Science</div>
+      <div class="item-subtitle">Kathmandu Model College, Tribhuvan University — 2014</div>
+    </div>
+
+    <div>
+      <div class="item-title">School Leaving Certificate</div>
+      <div class="item-subtitle">Buddha Jyoti Academy — 2012</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div>
+      <div class="item-title">Software QA Engineer & Project Manager</div>
+      <div class="item-subtitle">Innovate Tech</div>
+      <div class="item-date">Jan 2022 – Present</div>
+      <div class="item-desc">
+        Manage multiple web and platform-based projects, overseeing timelines, team coordination, and release management.
+        Facilitate sprint planning, daily stand-ups, and stakeholder meetings to ensure smooth project execution.
+        Coordinate with cross-functional teams including developers, designers, and QA to meet deliverables.
+        Design and execute test plans covering functional, regression, integration, and performance testing.
+        Conduct User Acceptance Testing (UAT) sessions and review final deliverables before production deployment.
+        Maintain project documentation including requirements, test cases, release notes, and progress trackers.
+        Tools used: GitLab, Figma, InVision, Google Chat, Microsoft Office Suite.
+      </div>
+    </div>
+
+    <div>
+      <div class="item-title">Project Business Analyst (Trainee)</div>
+      <div class="item-subtitle">InfoDevelopers Pvt. Ltd.</div>
+      <div class="item-date">Jul 2021 – Dec 2021</div>
+      <div class="item-desc">
+        Participated in requirement gathering and stakeholder discussions to define clear project goals.
+        Drafted documentation including user stories and process flows to support development and QA teams.
+        Helped improve communication between business and technical teams for better delivery outcomes.
+      </div>
+    </div>
+
+    <div>
+      <div class="item-title">Customer Service Representative</div>
+      <div class="item-subtitle">Innovate Tech</div>
+      <div class="item-date">Dec 2020 – May 2021</div>
+      <div class="item-desc">
+        Delivered technical assistance and product support to users via calls and chat.
+        Conducted user onboarding sessions and reported usability issues to the development team.
+        Documented user feedback and contributed to prioritizing feature improvements.
+      </div>
+    </div>
+
+    <div>
+      <div class="item-title">Marketing Executive & IT Support</div>
+      <div class="item-subtitle">Webbook</div>
+      <div class="item-date">Jan 2015 – Mar 2016</div>
+      <div class="item-desc">
+        Assisted hotel clients in upgrading digital systems, offering product setup and training.
+        Provided basic IT troubleshooting and support.
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Professional & Academic Projects</h2>
+
+    <div>
+      <div class="item-title">Kungfu Quiz (KFQ) Platform</div>
+      <div class="item-desc">
+        Managed end-to-end delivery of multiple projects, coordinating with design, development, QA, and other cross-functional teams.
+        Tracked daily progress and sprint milestones using GitLab Kanban boards and Excel spreadsheets.
+        Collected and documented project requirements by collaborating with stakeholders.
+        Led User Acceptance Testing (UAT) and conducted final reviews before production deployment.
+        Maintained comprehensive project documentation, design flows, and release notes.
+        Tools used: GitLab, Figma, InVision, Excel, Google Docs.
+      </div>
+      <div class="project-links">
+        <a href="https://www.kungfuquiz.com/" target="_blank" rel="noopener noreferrer">Main Site</a>
+        <a href="https://sifu.kungfuquiz.com/" target="_blank" rel="noopener noreferrer">Sifu Platform</a>
+        <a href="https://kungfuquiz.net/" target="_blank" rel="noopener noreferrer">KA Platform</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="item-title">My Second Teacher (MST) Platform</div>
+      <div class="item-desc">
+        Led QA for MST and its forks (Global, Nepal, Alston Digital, JelajahIlmu), including back-office systems.
+        Performed functional, regression, integration, and usability testing.
+        Collaborated with developers to identify and resolve defects.
+        Participated in requirements review and test planning.
+        Delivered detailed test reports.
+      </div>
+      <div class="project-links">
+        <a href="https://mysecondteacher.com" target="_blank" rel="noopener noreferrer">Global</a>
+        <a href="https://mysecondteacher.com.np" target="_blank" rel="noopener noreferrer">Nepal</a>
+        <a href="https://app.alstondigital.sg/" target="_blank" rel="noopener noreferrer">Alston Digital</a>
+        <a href="https://app.jelajahilmu.com/" target="_blank" rel="noopener noreferrer">JelajahIlmu</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="item-title">Interactive Video Publisher (IVy) – MST</div>
+      <div class="item-desc">
+        Tested IVy platform for uploading videos and embedding interactive questions.
+        Verified question triggers and multiple question types.
+        Reported bugs and collaborated with developers to improve reliability.
+      </div>
+      <div class="project-links">
+        <a href="https://ivy.advancedpedagogy.com" target="_blank" rel="noopener noreferrer">IVy Platform</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="item-title">Interactive eBook Publisher – MST</div>
+      <div class="item-desc">
+        Tested interactive eBook platform with multimedia content, quizzes, and annotations.
+        Verified consistent performance across devices and browsers.
+      </div>
+    </div>
+
+    <div>
+      <div class="item-title">Heart Failure Detection Data Analytics (Master’s Thesis)</div>
+      <div class="item-desc">
+        Developed data analytics model to identify heart failure indicators.
+        Analyzed healthcare datasets using statistical and ML techniques.
+        Delivered insights to improve diagnosis and predictive modeling.
+      </div>
+    </div>
+
+    <div>
+      <div class="item-title">Nepal Gadgets (Web-based E-commerce Application)</div>
+      <div class="item-desc">
+        Designed and implemented e-commerce platform for gadgets with user/admin login.
+        Integrated search, product management, order confirmation, and user management features.
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><strong>Location:</strong> Chokhachai Galli, Ward No. 24, Indrachowk, Kathmandu, Nepal</p>
+      <p><strong>Mobile:</strong> (+977) 9849-527999</p>
+      <p><strong>Email:</strong> <a href="mailto:shresthakush1996@gmail.com">shresthakush1996@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="[Insert your LinkedIn URL]" target="_blank" rel="noopener noreferrer">Your LinkedIn Profile</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Kush Man Shrestha. All rights reserved.
+</footer>
+
 </body>
 </html>
