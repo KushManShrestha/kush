@@ -4,16 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kush Man Shrestha | QA Engineer & Project Manager</title>
-  <link rel="icon" href="favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <title>Kush Man Shrestha | Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
   <style>
     * {
       box-sizing: border-box;
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f0f2f5;
@@ -21,80 +23,37 @@
       line-height: 1.6;
     }
 
-    nav {
-      background: #0077cc;
-      color: #fff;
-      padding: 15px 10px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-      color: #cce7ff;
-    }
-
     .container {
       max-width: 900px;
-      margin: 20px auto 80px;
+      margin: 40px auto;
       padding: 40px;
       background: #fff;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      width: 95%;
     }
 
     h1 {
-      font-size: 2.5rem;
-      color: #333;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    img.profile-photo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin: 0 auto 30px auto;
-      display: block;
-      object-fit: cover;
-      box-shadow: 0 0 10px rgba(0, 119, 204, 0.3);
+      font-size: 2.2rem;
+      margin-bottom: 5px;
     }
 
     h2 {
       font-size: 1.5rem;
       color: #0077cc;
       border-bottom: 2px solid #0077cc;
-      padding: 10px;
-      border-radius: 6px;
-      background: #e6f3ff;
+      padding-bottom: 5px;
       margin-top: 40px;
-      margin-bottom: 20px;
     }
 
     h3 {
       margin-top: 20px;
       font-size: 1.2rem;
-      color: #333;
     }
 
     p,
     ul,
     li {
       font-size: 1rem;
-      color: #222;
     }
 
     ul {
@@ -118,97 +77,145 @@
       margin-bottom: 30px;
     }
 
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 8px 0;
-      }
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
 
-      .container {
-        padding: 20px;
-      }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 
 <body>
-  <nav>
-    <a href="#summary">Summary</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#links">Links</a>
-    <a href="#references">References</a>
-  </nav>
-
   <div class="container">
     <h1>Kush Man Shrestha</h1>
-    <!-- Replace 'your-photo-url.jpg' with your actual photo URL or remove the img tag if you want -->
-    <img src="your-photo-url.jpg" alt="Kush Man Shrestha" class="profile-photo" />
-
-    <p>Chokhachai Galli, Ward No. 24, Indrachowk, Kathmandu, Nepal<br />
+    <p>
+      Chokhachai Galli, Ward No. 24, Indrachowk, Kathmandu, Nepal<br />
       Mobile: (+977) 9849-527999<br />
-      Email: <a href="mailto:shresthakush1996@gmail.com">shresthakush1996@gmail.com</a><br />
-      LinkedIn: <a href="https://www.linkedin.com/in/kush-man-shrestha-794a53133/" target="_blank"
-        rel="noopener noreferrer">linkedin.com/in/kush-man-shrestha</a>
+      Email:
+      <a href="mailto:shresthakush1996@gmail.com">shresthakush1996@gmail.com</a
+      ><br />
+      LinkedIn:
+      <a
+        href="https://www.linkedin.com/in/kush-man-shrestha-794a53133/"
+        target="_blank"
+        >linkedin.com/in/kush-man-shrestha</a
+      >
     </p>
 
-    <div class="section" id="summary">
+    <div class="section fade-in">
       <h2>Professional Summary</h2>
-      <p>Detail-oriented Software Quality Assurance Engineer with over 3 years of experience in software testing and
-        project coordination. Currently managing projects while also contributing to QA efforts—leading cross-functional
-        teams, gathering requirements, tracking progress, and ensuring timely delivery of high-quality software.
-        Proficient in Black Box and White Box testing techniques with a strong focus on usability, performance, and
-        product reliability. Recognized for clear communication, attention to detail, and commitment to continuous
-        improvement.</p>
+      <p>
+        Detail-oriented Software Quality Assurance Engineer with over 3 years of
+        experience in software testing and project coordination. Currently
+        managing projects while also contributing to QA efforts—leading
+        cross-functional teams, gathering requirements, tracking progress, and
+        ensuring timely delivery of high-quality software. Proficient in Black
+        Box and White Box testing techniques with a strong focus on usability,
+        performance, and product reliability. Recognized for clear
+        communication, attention to detail, and commitment to continuous
+        improvement.
+      </p>
     </div>
 
-    <div class="section" id="skills">
+    <div class="section fade-in">
       <h2>Key Skills</h2>
       <ul>
-        <li><strong>Testing & Quality Assurance:</strong> Black Box & White Box Testing, Performance Testing, Test Case
-          Design, Bug Reporting, QA Documentation</li>
-        <li><strong>Tools & Technologies:</strong> Git, GitLab, Figma, InVision, Slack, Google Chat, Microsoft Office Suite
+        <li>
+          <strong>Testing & Quality Assurance:</strong> Black Box & White Box
+          Testing, Performance Testing, Test Case Design, Bug Reporting, QA
+          Documentation
         </li>
-        <li><strong>Data Analysis:</strong> Statistical Analysis, Predictive Modeling Fundamentals, Basic Machine Learning
-          Concepts</li>
-        <li><strong>Soft Skills:</strong> Strong Communication (Nepali & English), Problem Solving, Cross-Functional Team
-          Collaboration, Time Management, Conflict Resolution, Adaptability</li>
-        <li><strong>Additional Skills:</strong> Requirement Gathering, Project Coordination, Basic Graphic Design, Content
-          Editing</li>
+        <li>
+          <strong>Tools & Technologies:</strong> Git, GitLab, Figma, InVision,
+          Slack, Google Chat, Microsoft Office Suite
+        </li>
+        <li>
+          <strong>Data Analysis:</strong> Statistical Analysis, Predictive
+          Modeling Fundamentals, Basic Machine Learning Concepts
+        </li>
+        <li>
+          <strong>Soft Skills:</strong> Strong Communication (Nepali & English),
+          Problem Solving, Cross-Functional Team Collaboration, Time Management,
+          Conflict Resolution, Adaptability
+        </li>
+        <li>
+          <strong>Additional Skills:</strong> Requirement Gathering, Project
+          Coordination, Basic Graphic Design, Content Editing
+        </li>
       </ul>
     </div>
 
-    <div class="section" id="education">
+    <div class="section fade-in">
       <h2>Education</h2>
       <ul>
-        <li>MSc in Information Technology and Applied Security — Islington College, London Metropolitan University (2024)
+        <li>
+          MSc in Information Technology and Applied Security — Islington College,
+          London Metropolitan University (2024)
         </li>
-        <li>BSc (Hons) in Computer Science — Herald College Kathmandu, University of Wolverhampton (2019)</li>
+        <li>
+          BSc (Hons) in Computer Science — Herald College Kathmandu, University
+          of Wolverhampton (2019)
+        </li>
         <li>+2 in Computer Science — Kathmandu Model College, Tribhuvan University (2014)</li>
         <li>School Leaving Certificate — Buddha Jyoti Academy (2012)</li>
       </ul>
     </div>
 
-    <div class="section" id="experience">
+    <div class="section fade-in">
       <h2>Professional Experience</h2>
       <h3>Software QA Engineer & Project Manager — Innovate Tech | Jan 2022 – Present</h3>
       <ul>
-        <li>Manage multiple web and platform-based projects, overseeing timelines, team coordination, and release
-          management.</li>
-        <li>Facilitate sprint planning, daily stand-ups, and stakeholder meetings to ensure smooth project execution.</li>
-        <li>Coordinate with cross-functional teams including developers, designers, and QA to meet deliverables.</li>
-        <li>Design and execute test plans covering functional, regression, integration, and performance testing.</li>
-        <li>Conduct User Acceptance Testing (UAT) sessions and review final deliverables before production deployment.</li>
-        <li>Maintain project documentation including requirements, test cases, release notes, and progress trackers.</li>
+        <li>
+          Manage multiple web and platform-based projects, overseeing timelines,
+          team coordination, and release management.
+        </li>
+        <li>
+          Facilitate sprint planning, daily stand-ups, and stakeholder meetings
+          to ensure smooth project execution.
+        </li>
+        <li>
+          Coordinate with cross-functional teams including developers, designers,
+          and QA to meet deliverables.
+        </li>
+        <li>
+          Design and execute test plans covering functional, regression,
+          integration, and performance testing.
+        </li>
+        <li>
+          Conduct User Acceptance Testing (UAT) sessions and review final
+          deliverables before production deployment.
+        </li>
+        <li>
+          Maintain project documentation including requirements, test cases,
+          release notes, and progress trackers.
+        </li>
       </ul>
 
       <h3>Project Business Analyst (Trainee) — InfoDevelopers Pvt. Ltd. | Jul 2021 – Dec 2021</h3>
       <ul>
-        <li>Participated in requirement gathering and stakeholder discussions to define clear project goals.</li>
-        <li>Drafted documentation including user stories and process flows to support development and QA teams.</li>
-        <li>Helped improve communication between business and technical teams for better delivery outcomes.</li>
+        <li>
+          Participated in requirement gathering and stakeholder discussions to
+          define clear project goals.
+        </li>
+        <li>
+          Drafted documentation including user stories and process flows to
+          support development and QA teams.
+        </li>
+        <li>
+          Helped improve communication between business and technical teams for
+          better delivery outcomes.
+        </li>
       </ul>
 
       <h3>Customer Service Representative — Innovate Tech | Dec 2020 – May 2021</h3>
@@ -225,29 +232,61 @@
       </ul>
     </div>
 
-    <div class="section" id="projects">
+    <div class="section fade-in">
       <h2>Professional Projects</h2>
       <h3>Kungfu Quiz (KFQ)</h3>
       <ul>
-        <li>Worked as Project Manager, overseeing the end-to-end delivery of new features across KFQ projects.</li>
-        <li>Coordinated cross-functional teams including design, development, and QA to align goals and timelines.</li>
-        <li>Led sprint planning, daily stand-ups, and milestone tracking using GitLab Kanban boards and Excel sheets.</li>
-        <li>Collaborated with stakeholders to gather, refine, and document technical and functional requirements.</li>
-        <li>Supervised UAT and ensured production readiness through structured final reviews.</li>
-        <li>Maintained comprehensive documentation including requirement documents, design flows, test plans, release notes,
-          and project trackers.</li>
-        <li>Proposed and discussed new feature ideas to enhance platform functionality, such as AI-driven question
-          generation and improved analytics dashboards.</li>
+        <li>
+          Worked as Project Manager, overseeing the end-to-end delivery of new
+          features across KFQ projects.
+        </li>
+        <li>
+          Coordinated cross-functional teams including design, development, and
+          QA to align goals and timelines.
+        </li>
+        <li>
+          Led sprint planning, daily stand-ups, and milestone tracking using
+          GitLab Kanban boards and Excel sheets.
+        </li>
+        <li>
+          Collaborated with stakeholders to gather, refine, and document
+          technical and functional requirements.
+        </li>
+        <li>
+          Supervised UAT and ensured production readiness through structured
+          final reviews.
+        </li>
+        <li>
+          Maintained comprehensive documentation including requirement documents,
+          design flows, test plans, release notes, and project trackers.
+        </li>
+        <li>
+          Proposed and discussed new feature ideas to enhance platform
+          functionality, such as AI-driven question generation and improved
+          analytics dashboards.
+        </li>
       </ul>
 
       <h3>My Second Teacher (MST)</h3>
       <ul>
-        <li>Led comprehensive Software Quality Assurance (QA) for MST and its four forks: Global, Nepal, Alston Digital, and
-          JelajahIlmu (Indonesia), including their back-office systems (Apollo).</li>
-        <li>Performed functional, regression, integration, and usability testing to ensure software stability, performance,
-          and consistent user experience across all platform versions.</li>
-        <li>Collaborated with developers to identify, document, prioritize, and track defects for timely resolution.</li>
-        <li>Participated in requirements review and test planning sessions aligned with business objectives.</li>
+        <li>
+          Led comprehensive Software Quality Assurance (QA) for MST and its four
+          forks: Global, Nepal, Alston Digital, and JelajahIlmu (Indonesia),
+          including their back-office systems (Apollo).
+        </li>
+        <li>
+          Performed functional, regression, integration, and usability testing to
+          ensure software stability, performance, and consistent user experience
+          across all platform versions.
+        </li>
+        <li>
+          Collaborated with developers to identify, document, prioritize, and
+          track defects for timely resolution.
+        </li>
+        <li>
+          Participated in requirements review and test planning sessions aligned
+          with business objectives.
+        </li>
         <li>Delivered detailed test reports and communicated progress to stakeholders.</li>
       </ul>
 
@@ -261,48 +300,75 @@
 
       <h3>WRL Supervisor</h3>
       <ul>
-        <li>Selected as Project Manager for the Work-Related Learning (WRL) module, overseen by Islington College (Jul 2024 –
-          Nov 2024).</li>
+        <li>Selected as Project Manager for the Work-Related Learning (WRL) module, overseen by Islington College (Jul 2024 – Nov 2024).</li>
         <li>Led and mentored 18 interns, providing guidance on project delivery and professional development.</li>
         <li>Supervised the successful development and deployment of an HRM web application with 20+ key features.</li>
-        <li>Collaborated with fellow WRL supervisors to support career growth and adaptability across the internship
-          program.</li>
+        <li>Collaborated with fellow WRL supervisors to support career growth and adaptability across the internship program.</li>
       </ul>
     </div>
 
-    <div class="section" id="academic-projects">
+    <div class="section fade-in">
       <h2>Academic Projects</h2>
       <ul>
-        <li><strong>Heart Failure Detection Data Analytics (Master’s Thesis):</strong> Developed a data analytics model to
-          identify key indicators and patterns associated with heart failure. Analyzed large healthcare datasets using
-          statistical and machine learning techniques. Delivered actionable insights to improve diagnostic accuracy and
-          predictive modeling.</li>
-        <li><strong>Nepal Gadgets (Web-based E-commerce Application):</strong> Designed and implemented an e-commerce
-          platform for electronic gadgets with user and admin login functionalities. Integrated search, product
-          management, order confirmation, and user management features to enhance usability and sales efficiency.</li>
+        <li>
+          <strong>Heart Failure Detection Data Analytics (Master’s Thesis):</strong>
+          Developed a data analytics model to identify key indicators and patterns
+          associated with heart failure. Analyzed large healthcare datasets using
+          statistical and machine learning techniques. Delivered actionable
+          insights to improve diagnostic accuracy and predictive modeling.
+        </li>
+        <li>
+          <strong>Nepal Gadgets (Web-based E-commerce Application):</strong>
+          Designed and implemented an e-commerce platform for electronic gadgets
+          with user and admin login functionalities. Integrated search, product
+          management, order confirmation, and user management features to enhance
+          usability and sales efficiency.
+        </li>
       </ul>
     </div>
 
-    <div class="section" id="links">
+    <div class="section fade-in">
       <h2>Project Links</h2>
       <ul>
-        <li><a href="https://mysecondteacher.com" target="_blank" rel="noopener noreferrer">MST Global</a></li>
-        <li><a href="https://mysecondteacher.com.np" target="_blank" rel="noopener noreferrer">MST Nepal</a></li>
-        <li><a href="https://app.alstondigital.sg/" target="_blank" rel="noopener noreferrer">Alston Digital</a></li>
-        <li><a href="https://app.jelajahilmu.com/" target="_blank" rel="noopener noreferrer">JelajahIlmu (Indonesia)</a></li>
-        <li><a href="https://ivy.advancedpedagogy.com" target="_blank" rel="noopener noreferrer">Interactive Video
-            Publisher (IVy)</a></li>
-        <li><a href="https://www.kungfuquiz.com/" target="_blank" rel="noopener noreferrer">Kungfu Quiz – Main Site</a></li>
-        <li><a href="https://sifu.kungfuquiz.com/" target="_blank" rel="noopener noreferrer">Sifu Platform</a></li>
-        <li><a href="https://kungfuquiz.net/" target="_blank" rel="noopener noreferrer">KA Platform</a></li>
+        <li><a href="https://mysecondteacher.com" target="_blank">MST Global</a></li>
+        <li><a href="https://mysecondteacher.com.np" target="_blank">MST Nepal</a></li>
+        <li><a href="https://app.alstondigital.sg/" target="_blank">Alston Digital</a></li>
+        <li><a href="https://app.jelajahilmu.com/" target="_blank">JelajahIlmu (Indonesia)</a></li>
+        <li><a href="https://ivy.advancedpedagogy.com" target="_blank">Interactive Video Publisher (IVy)</a></li>
+        <li><a href="https://www.kungfuquiz.com/" target="_blank">Kungfu Quiz – Main Site</a></li>
+        <li><a href="https://sifu.kungfuquiz.com/" target="_blank">Sifu Platform</a></li>
+        <li><a href="https://kungfuquiz.net/" target="_blank">KA Platform</a></li>
       </ul>
     </div>
 
-    <div class="section" id="references">
+    <div class="section fade-in">
       <h2>References</h2>
       <p>Available upon request.</p>
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const faders = document.querySelectorAll(".fade-in");
+
+      const appearOnScroll = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+    });
+  </script>
 </body>
 
 </html>
+
